@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="js/validaciones.js"></script>
+    <script src="js/validform.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<h1>Formulario recogida de datos de las empresas</h1>
+
+<body>
+    <form action="" method="POST" name="formulario" id="formulario">
+            <h3>Domicilio Social Particular:</h3>
+        <label>Razon social/Apellidos y nombre:<input type="text" name="nombre" id="nombre"/> <input
+            type="text" name="error_razon" id="error_razon" class="errores" readonly/></label><br><br>
+
+        <label>Codigo de la Empresa <input type="text" name="codempresa" id="codempresa" /><input
+            type="text" name="error_codempresa" id="error_codempresa" class="errores" readonly/></label><br><br>
+
+        <label>CIF/NIF de la Empresa<input type="text" name="cifnif" id="cifnif"/><input type="text"
+            name="error_nifcif" id="error_nifcif" class="errores" readonly/></label><br><br>
+
+        <fieldset>
+
+            <legend>Tipo de persona</legend><label><input
+            type="text" name="error_tipo" id="error_tipo" class="errores" readonly/> </label><br><br>
+
+            <label>
+
+                <input type="radio" name="tipopersona" value="juridica"/>Juridica
+
+            </label>
+
+            <label>
+
+                <input type="radio" name="tipopersona" value="fisica"/>Fisica
+
+            </label>
+
+            </fieldset>
+
+        <fieldset>
+
+            <legend>Domicilio Social/Particular</legend>
+
+            <label>Direccion<input type="text" name="direccion" id="direccion"/><input
+            type="text" name="error_direccion" id="error_direccion" class="errores" readonly/></label><br><br>
+
+            <label>Telefono<input type="text" name="telefono" id="telefono" /><input
+            type="text" name="error_telefono" id="error_telefono" class="errores" readonly/></label><br><br>
+
+            <label>Localidad<input type="text" name="localidad" id="localidad"/><input
+            type="text" name="error_localidad" id="error_localidad" class="errores" readonly/></label><br><br>
+
+            <label>Codigo Postal <input type="text" name="codpostal" id="codpostal" /><input
+            type="text" name="error_codpos" id="error_codpos" class="errores" readonly/></label><br><br>
+
+            <label>Provincia<input type="text" name="provincia" id="provincia"/></label><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Datos Bancarios</legend>
+
+            <label>Codigos del banco<input type="text" name="codbanco" id="codbanco" maxlength=4 /><input
+            type="text" name="error_banco" id="error_banco" class="errores"  readonly/></label><br><br>
+
+            <label>Codigo oficina<input type="text" name="codoficina" id="codoficina" maxlength=4 /><input
+            type="text" name="error_oficina" id="error_oficina" class="errores" readonly/></label><br><br>
+
+            <label>Codigo control<input type="text" name="codcontrol" id="codcontrol"/><input
+            type="text" name="error_codcon" id="error_codcon" class="errores" readonly/></label><br><br>
+
+            <label>Numero de cuenta<input type="text" name="numcuenta" id="numcuenta" maxlength=10 /><input
+            type="text" name="error_numcu" id="error_numcu" class="errores"  readonly/></label><br><br>
+
+            <label>IBAN<input type="text" name="iban" id="iban"/><input
+            type="text" name="error_iban" id="error_iban" class="errores" readonly/></label><br>
+
+        </fieldset>
+
+        <br>
+
+        <label>Fecha Constitucion Empresa<input type="text" name="fecha" id="fecha"><input
+        type="text" name="error_fecha" id="error_fecha" class="errores"  readonly/></label><br><br>
+
+        <label>Numero de trabajadores<input type="text" name="numtrabajadores" id="numtrabajadores"><input
+        type="text" name="error_numtrab" id="error_numtrab" class="errores"  readonly/></label><br><br>
+
+        <label>Numero de Fabricas de la Empresa <input type="text" name="numfabrica" id="numfabrica"><input
+        type="text" name="error_numfab" id="error_numfab" class="errores"  readonly/></label><br><br>
+
+        <fieldset>
+
+            <legend>Comunidades en las que hay fabricas</legend>
+
+            <label>
+                <select name="comunidades" multiple>
+                    <!-- <option value="0" selected disabled hidden>Escoja una de estas opciones</option> -->
+                    <option value="Andalucí­a">Andalucía</option>
+                    <option value="Aragón">Aragón</option>
+                    <option value="Principado de Asturias">Principado de Asturias</option>
+                    <option value="Islas Baleares">Islas Baleares</option>
+                    <option value="Paí­s Vasco">Paí­s Vasco</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                    <option value="Castilla y LeÃ³n">Castilla y León</option>
+                    <option value="Cataluña">Cataluña</option>
+                    <option value="Extremadura">Extremadura</option>
+                    <option value="Galicia">Galicia</option>
+                    <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+                    <option value="Región de Murcia">Región de Murcia</option>
+                    <option value="Comunidad Foral de Navarra">Comunidad Foral de Navarra</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Comunidad Valenciana">Comunidad Valenciana</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Melilla">Melilla</option>
+                </select>
+            </label><label>
+            <input
+            type="text" name="error_comunidad" id="error_comunidad" class="errores" readonly/>
+        </label><br><br>
+            
+        </fieldset>
+
+        <br>
+
+        <fieldset name="sectores_economicos">
+
+            <legend>Sector/es economicos</legend>
+
+            <label>
+                <input
+                type="text" name="error_sectores" id="error_sectores" class="errores" readonly/>
+            </label><br><br>
+            
+            <label><input type="checkbox" name="sector1" value="alimentacion" /> Alimentacion</label>
+
+            <label><input type="checkbox" name="sector2" value="informatica" /> Informatica</label>
+
+            <label><input type="checkbox" name="sector3" value="comercio" /> Comercio</label>
+
+            <label><input type="checkbox" name="sector4" value="construccion" /> Construccion</label>
+
+            <label><input type="checkbox" name="sector5" value="hosteleria" /> Hosteleria</label>
+
+            <label><input type="checkbox" name="sector6" value="automocion" /> Automocion</label>
+
+            <label><input type="checkbox" name="sector7" value="calzado" /> Calzado</label>
+
+            <label><input type="checkbox" name="sector8" value="turismo" /> Turismo</label>
+
+            <label><input type="checkbox" name="sector9" value="agricultura" /> Agricultura</label>
+
+            <label><input type="checkbox" name="sector10" value="ganaderia" /> Ganaderia</label>
+
+            <label><input type="checkbox" name="sector11" value="otros" /> Otros</label>
+        
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Tipo de Empresa</legend>
+            <label>
+                <input
+                type="text" name="error_tipoemp" id="error_tipoemp" class="errores" readonly/>
+            </label><br><br>
+
+            <label>
+                <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>S.A
+
+            <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>S.L
+
+            <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>S.A.L
+
+            <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>Cooperativa
+
+            <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>Autónomo
+
+            <input type="radio"  name="tipo" value="HTML"/>
+            </label>
+            <label>Otra </label>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" name="Validar" id="validar" value="Validar"/>
+
+        <input type="reset" name = "limpiar" value="Limpiar" id="llimpiar"/>
+
+    </form>
+
+</body>
+
+</html>

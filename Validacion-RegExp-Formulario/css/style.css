@@ -1,0 +1,9 @@
+body{
+    background-color: #457B9D;
+    color:#F1FAEE;
+}
+.errores{
+    visibility: hidden;
+    background-color: #e63946;
+    width: 30%;    
+}
