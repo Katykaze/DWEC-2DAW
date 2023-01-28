@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="medio" title="titulo" lang="idioma" dir="ltr|trl"></style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="codigo2.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <dialog id="dialogo2">
+        <form name="formulario2" id="formulario2" action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="nombre">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena"><br>
+            <input type="button" id="aceptar" value="Aceptar">
+            <input type="button" id="cancelar" value="Cancelar">
+        </form>
+    </dialog>
+    <dialog id="dialogo3">
+        <form name="formulario3" id="formulario3">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="nombreUsu" name="nombreUsu"><br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasenaUsu" id="contrasenaUsu"><br>
+            <input type="button" id="aceptarUsu" value="Aceptar">
+            <input type="button" id="cancelarUsu" value="Cancelar">
+        </form>
+    </dialog>
+    <div class="contenedor" id="contendor_principal">
+        <!-- modificar aqui -->
+        <div id="primerFormu">
+            <form action="" id="usuario">
+                <label id="usuarioR">
+                    <h3>Usuario</h3>
+                </label><label id="usuarioRegistrado">Usuario</label><br>
+                <input type="button" id="registroPag" value="Registrarse">
+                <input type="button" id="entrarPag" value="Entrar">
+            </form>
+        </div>
+        <div id="segundoFormu">
+            <form name="formulario6" id="formulario6" action="">
+                    <h3>Nombres de Localidades</h3>
+                <label for="localidad">Localidad</label>
+                <input type="text" name="localidad" id="localidad"><br>
+                <input type="button" id="anadir_localidad" value="Añadir Localidad"><br>
+                <label for="">Lista de localidades ordenadas</label>
+                <ul id="lista_localidades" >
+
+                </ul>
+            </form>
+
+        </div>
+        <div id="tercerFormu">
+            <form name="formulario7" id="formulario7" action="">
+                <label for="">
+                    <h3>Definiciones</h3>
+                </label><br>
+                <label for="">Palabra</label>
+                <input type="text" name="palabra" id="palabra"><br>
+                <label for="">Concepto</label>
+                <input type="text" name="concepto" id="concepto"><br>
+                <input type="button" id="anadir_definicion" value="Añadir Definicion"><br>
+                <label for="">Lista de Definiciones</label>
+                <dl id="lista_definiciones">
+
+                </dl>
+            </form>
+
+        </div>
+        <div id="cuartoFormu">
+            <form name="formulario7" id="formulario72" action="">
+                <label for="">
+                    <h3>Listado de Coches</h3>
+                </label><br>
+                <label for="">Marca</label>
+                <input type="text" name="marca" id="marca"><br>
+                <label for="">Modelo</label>
+                <input type="text" name="modelo" id="modelo"><br>
+                <label for="">Precio</label>
+                <input type="text" name="precio" id="precio"><br>
+                <input type="button" id="anadir_coche" value="Añadir Coche"><br>
+                <table name="tablaCoches" id="tablaCoches">
+                    <thead>
+                        <tr>
+                            <td>Marca</td>
+                            <td>Modelo</td>
+                            <td>Precio</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+
+                </table>
+            </form>
+        </div>
+        <div id="quintoFormu">
+            <form name="formulario8" id="formulario8" action="">
+                <label for="">
+                    <h3>Comunidades Autónomas</h3>
+                </label>
+                <select name="comunidades" id="comunidades">
+                    <option value="Andaluci­a">Andalucía</option>
+                    <option value="Aragon">Aragón</option>
+                    <option value="PrincipadodeAsturias">Principado de Asturias</option>
+                    <option value="IslasBaleares">Islas Baleares</option>
+                    <option value="PaisVasco">Paí­s Vasco</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="CastillaLaMancha">Castilla-La Mancha</option>
+                    <option value="CastillayLeon">Castilla y León</option>
+                    <option value="Cataluna">Cataluña</option>
+                    <option value="Extremadura">Extremadura</option>
+                    <option value="Galicia">Galicia</option>
+                    <option value="Madrid">Comunidad de Madrid</option>
+                    <option value="Murcia">Región de Murcia</option>
+                    <option value="Navarra">Comunidad Foral de Navarra</option>
+                    <option value="Rioja">La Rioja</option>
+                    <option value="Valencia">Comunidad Valenciana</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Melilla">Melilla</option>
+                </select>
+                <select name="provincias" id="provincias">
+
+                </select>
+                <br>
+                <label for="">Comentario sobre la comunidad autónoma</label><br>
+                <p id="comentario-comunidad" name="comentario-comunidad"></p>
+            </form>
+        </div>
+        <div id="chatmensaje">
+            <label for="">
+                <h3>Mensajes</h3>
+            </label>
+
+            <form name="formulario9" id="formulario9" action="">
+                <input type="button" id="anadir_mensaje" value="Añadir mensaje">
+            </form>
+        </div>
+        <dialog id="dialogo4">
+            <form action="formulario10" id="formulario10">
+                <label for="">Titulo</label><br>
+
+                <input type="text" name="titulo_chat" id="titulo_chat"><br>
+                <label for="">Comentario</label><br>
+                <input type="text" name="comentario" id="comentario_chat">
+                <legend>Selecciona Imagen</legend>
+                <input type="radio" name="img" id="img1" value="img/micki.jpg"><img src="img/micki.jpg" /><br>
+                <input type="radio" name="img" id="img2" value="img/simpson.jpg"><img src="img/simpson.jpg" /><br>
+                <input type="radio" name="img" id="img3" value="img/bug.png"><img src="img/bug.png" alt=""><br>
+                <input type="radio" name="img" id="img4" value="img/casco.jpg"><img src="img/casco.jpg" alt=""><br>
+                <input type="radio" name="img" id="img5" value="img/chica.jpg"><img src="img/chica.jpg" alt=""><br>
+                <input type="radio" name="img" id="img6" value="img/corre.png"><img src="img/corre.png" alt=""><br>
+                <input type="radio" name="img" id="img7" value="img/silvestre.png"><img src="img/silvestre.png"
+                    alt=""><br>
+                <input type="radio" name="img" id="img8" value="img/tasmania.jpg"><img src="img/tasmania.jpg"
+                    alt=""><br>
+                <input type="button" name="aceptarChat" id="aceptarChat" value="aceptar">
+                <input type="button" name="cancelarChat" id="cancelarChat" value="cancelar">
+            </form>
+        </dialog>
+
+    </div>
+</body>
+
+</html>
